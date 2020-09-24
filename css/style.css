@@ -4,7 +4,34 @@
   box-sizing: border-box;
 }
 
-nav, footer > .start, .marketing, .sales, .service, .free {
+/* proprietà per definire i blocchi */
+
+.col_50 {
+  width: 50%;
+}
+
+.col_33 {
+  width: calc(100% / 3)
+}
+
+.col_25 {
+  width: 25%;
+}
+
+.row > div[class*="col_"] {
+  float: left;
+  border: 1px solid black;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* proprietà che definiscono i colori */
+
+nav, .start, .marketing, .sales, .service, .free {
   background-color: #FFFFFF;
 }
 
@@ -12,38 +39,12 @@ footer {
   background-color: #32495C;
 }
 
-.h100 {
-  height: 100px;
-  border: 1px solid black;
-}
-
-.h300 {
-    height: 300px;
-    border: 1px solid black;
-}
-
-.h500 {
-  height: 500px;
-  border: 1px solid black;
-}
-
-.settings-bar, main .description {
+header div.row > div[class*="col_"], main .description {
   background-color: #F4F9FD;
-}
-
-nav::after, .four-column::after, .three-column::after, .credits::after {
-  content: '';
-  clear: both;
-  display: table;
 }
 
 main .intro {
   background-color: #FFF2EF;
-}
-
-nav > .logo, nav > .menu {
-  float: left;
-  width: 50%;
 }
 
 main .separator {
@@ -52,33 +53,20 @@ main .separator {
   height: 100px;
 }
 
-main .description {
-  height: 1000px;
-  border: 1px solid black;
-  text-align: center;
-}
-
 main .community {
   background-color: #00B3AF;
 }
 
-.presentation, .free, .three-column {
-  width: 75%;
-  border: 1px solid black;
-  margin: auto;
+/* classi provvisorie */
+
+.h100 {
+  height: 100px;
 }
 
-.marketing, .sales, .service {
-  float: left;
-  width: 33%;
+.h300 {
+    height: 300px;
 }
 
-.four-column > div {
-  float: left;
-  width: 25%;
-}
-
-.credits > div {
-  float: left;
-  width: 50%;
+.h500 {
+  height: 500px;
 }
