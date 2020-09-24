@@ -20,7 +20,6 @@
 
 .row > div[class*="col_"] {
   float: left;
-  border: 1px solid black;
 }
 
 .row::after {
@@ -39,7 +38,7 @@ footer {
   background-color: #32495C;
 }
 
-header div.row > div[class*="col_"], main .description {
+header > div.row:first-child, main .description {
   background-color: #F4F9FD;
 }
 
@@ -57,6 +56,54 @@ main .community {
   background-color: #00B3AF;
 }
 
+button.login {
+  color: orange;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid orange;
+  border-radius: 3px;
+}
+
+button.get-free {
+  color: white;
+  background-color: orange;
+  padding: 5px;
+  border: 1px solid orange;
+  border-radius: 3px;
+}
+/* proprietà di layout */
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+select {
+  height: 30px;
+}
+
+.f-right {
+  float: right;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+.margin5 {
+  margin: 5px
+}
+
+.logo > img {
+  height: 50px;
+}
+
+ul.menu > li {
+  display: inline-block;
+  float: right;
+  padding: 10px;
+  margin: 5px;
+}
 /* classi provvisorie */
 
 .h100 {

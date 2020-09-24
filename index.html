@@ -4,21 +4,46 @@
     <meta charset="utf-8">
     <title>HubSpot</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
     <!-- START header -->
     <header>
       <div class="row">
-        <div class="col_50 settings-bar h100">
-        </div>
-        <div class="col_50 h100">
-
+        <div class="row container">
+          <div class="col_50 settings-bar">
+            <select class="margin5" name="language" id="language">
+              <option value="english">English</option>
+              <option value="deutsch">Deutsch</option>
+              <option value="chinese">Chinese</option>
+              <option value="espanol">Espa&ntilde;ol</option>
+              <option value="portogues">Portogu&ecirc;s</option>
+              <option value="francais">Fran&ccedil;ais</option>
+            </select>
+            <a href="#" class="margin5">Contact Us</a>
+          </div>
+          <div class="col_50">
+            <button class="get-free f-right" type="button" name="get-free">GetHubspotFree</button>
+            <button class="login f-right" type="button" name="login">Log In</button>
+            <i class="fa fa-search f-right" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
+      <hr>
       <nav class="row">
-        <div class="logo col_50 h100">
-        </div>
-        <div class="menu col_50 h100">
+        <div class="row container">
+          <div class="logo col_50">
+            <img class="margin5" src="img/hubspot-logo.png" alt="logo del sito">
+          </div>
+          <div class="menu col_50">
+            <ul class="menu margin5">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Software</a></li>
+            </ul>
+          </div>
 
         </div>
       </nav>
