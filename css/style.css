@@ -190,6 +190,10 @@ table img, table i {
   line-height: 40px;
   font-size: 30px;
 }
+
+.start img {
+  display: inline-block;
+}
 /* classi provvisorie */
 
 .h100 {
