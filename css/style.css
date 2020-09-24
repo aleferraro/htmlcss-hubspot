@@ -6,12 +6,20 @@
 
 /* proprietà per definire i blocchi */
 
+.col_75 {
+  width: 75%;
+}
+
 .col_50 {
   width: 50%;
 }
 
 .col_33 {
-  width: calc(100% / 3)
+  width: calc((100% - 40px) / 3);
+}
+
+.col_33 > p {
+  height: 100px;
 }
 
 .col_25 {
@@ -30,8 +38,16 @@
 
 /* proprietà che definiscono i colori */
 
-nav, .start, .marketing, .sales, .service, .free {
+nav, .start {
   background-color: #FFFFFF;
+}
+
+.marketing, .sales, .service, .free {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 footer {
@@ -107,6 +123,72 @@ ul.menu > li {
 
 .intro {
   padding: 30px 0 100px 0;
+}
+
+.center {
+  text-align: center;
+}
+.presentation {
+  padding: 20px 13%;
+}
+
+.free {
+  padding: 20px 10%;
+}
+
+img.logo {
+  width: 170px;
+  height: 140px;
+}
+.col_75 ul.feature > li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.col_33 ul.feature > li {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.sales {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.community {
+  color: white;
+  padding: 20px 0;
+}
+
+table {
+  margin: auto;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+tr:first-child > td {
+  border-bottom: 1px solid white;
+}
+
+td:nth-child(1n+2) {
+  border-left: 1px solid white;
+}
+
+table img, table i {
+  width: 120px;
+  height: 45px;
+}
+
+.data {
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
 }
 /* classi provvisorie */
 
