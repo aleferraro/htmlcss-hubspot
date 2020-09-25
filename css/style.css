@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: helvetica, sans-serif;
 }
 
 /* proprietà per definire i blocchi */
@@ -15,11 +20,7 @@
 }
 
 .col_33 {
-  width: calc((100% - 40px) / 3);
-}
-
-.col_33 > p {
-  height: 100px;
+  width: calc((100% - 80px) / 3);
 }
 
 .col_25 {
@@ -65,12 +66,10 @@ header, header a {
 
 main .intro {
   background-color: #FFF2EF;
-}
-
-main .separator {
-  background-color: #AFEBE4;
-  border: 2px solid #10003A;
-  height: 100px;
+  background-image: url('../img/hero.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  border-bottom: 3px solid #10003A;
 }
 
 main .community {
@@ -89,6 +88,14 @@ button.get-free {
   color: white;
   background-color: orange;
   padding: 5px;
+  border: 1px solid orange;
+  border-radius: 3px;
+}
+
+button.main-button {
+  color: white;
+  background-color: orange;
+  padding: 15px;
   border: 1px solid orange;
   border-radius: 3px;
 }
@@ -128,10 +135,6 @@ a {
   text-decoration: none;
 }
 
-.margin5 {
-  margin: 5px
-}
-
 .margin10 {
   margin: 10px
 }
@@ -158,24 +161,52 @@ a {
 }
 
 .intro {
-  padding: 30px 0 100px 0;
+  padding: 70px 0 244px 0;
 }
 
-.center {
+.intro h1 {
+  font-size: 45px;
+  padding: 15px 0;
+}
+
+.h-center {
   text-align: center;
 }
+
 .presentation {
-  padding: 20px 13%;
+  padding: 40px 200px;
+}
+
+.presentation h2 {
+  padding-bottom: 15px;
 }
 
 .free {
-  padding: 20px 10%;
+  padding: 20px 100px;
+}
+
+.free hr {
+  position: relative;
+  top: 20px;
+}
+
+h2, h3 {
+  padding-bottom: 20px;
+}
+
+h4 {
+  padding: 15px 0;
+}
+
+i.fa-check-circle {
+  color: orange;
 }
 
 img.logo {
   width: 170px;
   height: 140px;
 }
+
 .col_75 ul.feature > li {
   display: inline-block;
   text-decoration: none;
@@ -190,8 +221,8 @@ img.logo {
 }
 
 .sales {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .community {
@@ -201,7 +232,7 @@ img.logo {
 
 table {
   margin: auto;
-  padding: 10px;
+  padding: 30px;
 }
 
 td {
@@ -227,8 +258,22 @@ table img, table i {
   font-size: 30px;
 }
 
-.start img {
+.start img[alt="icons"] {
   display: inline-block;
+  max-width: 400px;
+  position: relative;
+  top: 50px;
+}
+
+.start .col_25 {
+  max-width: 200px;
+  padding: 20px;
+}
+
+img.girl {
+  max-width: 200px;
+  position: relative;
+  left: 100px;
 }
 
 ul.footer-list li a {
