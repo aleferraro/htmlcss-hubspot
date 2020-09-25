@@ -52,6 +52,7 @@ nav, .start {
 
 footer {
   background-color: #32495C;
+  color: white;
 }
 
 header > div.row:first-child, main .description {
@@ -85,6 +86,14 @@ button.get-free {
   background-color: orange;
   padding: 5px;
   border: 1px solid orange;
+  border-radius: 3px;
+}
+
+button.support {
+  color: lightblue;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid white;
   border-radius: 3px;
 }
 /* proprietà di layout */
@@ -194,6 +203,20 @@ table img, table i {
 .start img {
   display: inline-block;
 }
+
+ul.footer-list li a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.language li, .policy li {
+  display: inline-block;
+  padding: 20px;
+}
+
+footer .logo img {
+  width: 100px;
+}
 /* classi provvisorie */
 
 .h100 {
@@ -202,8 +225,5 @@ table img, table i {
 
 .h300 {
     height: 300px;
-}
-
-.h500 {
-  height: 500px;
+    border: 1px solid black;
 }
