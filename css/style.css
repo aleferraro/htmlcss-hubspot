@@ -59,6 +59,10 @@ header > div.row:first-child, main .description {
   background-color: #F4F9FD;
 }
 
+header, header a {
+  color: grey;
+}
+
 main .intro {
   background-color: #FFF2EF;
 }
@@ -103,8 +107,16 @@ button.support {
   margin: auto;
 }
 
-select {
+header select {
   height: 30px;
+  background-color: transparent;
+  border: 0;
+  color: grey;
+}
+
+.search {
+  color: aqua;
+  padding: 5px;
 }
 
 .f-right {
@@ -115,19 +127,34 @@ select {
 a {
   text-decoration: none;
 }
+
 .margin5 {
   margin: 5px
 }
 
-.logo > img {
-  height: 50px;
+.margin10 {
+  margin: 10px
 }
 
-ul.menu > li {
+.logo > img {
+  height: 30px;
+}
+
+.menu {
+  height: 30px;
+  line-height: 30px;
+}
+
+.menu ul > li {
   display: inline-block;
   float: right;
   padding: 10px;
   margin: 5px;
+}
+
+.menu ul > li a {
+  padding: 12px;
+  font-size: 15px;
 }
 
 .intro {
@@ -216,14 +243,4 @@ ul.footer-list li a {
 
 footer .logo img {
   width: 100px;
-}
-/* classi provvisorie */
-
-.h100 {
-  height: 100px;
-}
-
-.h300 {
-    height: 300px;
-    border: 1px solid black;
 }
