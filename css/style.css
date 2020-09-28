@@ -43,12 +43,22 @@ nav, .start {
   background-color: #FFFFFF;
 }
 
-.marketing, .sales, .service, .free {
+.card {
   background-color: #FFFFFF;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
+}
+
+.card:only-of-type {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.card:nth-of-type(2) {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 footer {
@@ -64,16 +74,16 @@ header, header a {
   color: grey;
 }
 
-main .intro {
+main .jumbotron {
   position: relative;
   height: 695px;
-  background-image: url('../img/hero.svg');
+  background-image: url('../img/jumbotron.png');
   background-position: right top;
   background-repeat: no-repeat;
   background-color: #fff3ee;
 }
 
-main .intro::before {
+main .jumbotron::before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -97,11 +107,16 @@ a.button {
   margin: 10px;
   border: 1px solid orange;
   border-radius: 3px;
+  display: inline-block;
 }
 
 a.bg-white {
   color: orange;
   background-color: white;
+}
+
+a.big {
+  padding: 15px;
 }
 
 button.main-button {
@@ -142,6 +157,10 @@ button.support {
   margin: 5px;
 }
 
+.f-left {
+  float: left;
+}
+
 a {
   text-decoration: none;
 }
@@ -171,11 +190,11 @@ a {
   font-size: 15px;
 }
 
-.intro {
+.jumbotron {
   padding: 70px 0 70px 0;
 }
 
-.intro h1 {
+.jumbotron h1 {
   font-size: 45px;
   padding: 15px 0;
 }
@@ -188,17 +207,21 @@ a {
   padding: 40px 200px;
 }
 
+.presentation img {
+  width: 250px;
+}
+
 .presentation h2 {
   padding-bottom: 15px;
 }
 
-.free {
-  padding: 20px 100px;
-}
-
-.free hr {
+.bar {
+  background-color: black;
+  height: 1px;
+  width: 65%;
+  margin-left: 40px;
   position: relative;
-  top: 20px;
+  top: 23px;
 }
 
 h2, h3 {
@@ -229,11 +252,6 @@ img.logo {
   text-align: left;
   text-decoration: none;
   padding: 10px;
-}
-
-.sales {
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .community {
