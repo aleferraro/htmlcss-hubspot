@@ -20,7 +20,7 @@ body {
 }
 
 .col_33 {
-  width: calc((100% - 80px) / 3);
+  width: 30%;
 }
 
 .col_25 {
@@ -57,8 +57,8 @@ nav, .start {
 }
 
 .card:nth-of-type(2) {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 footer {
@@ -264,24 +264,32 @@ img.logo {
   padding: 20px 0;
 }
 
-table {
+.table {
   margin: auto;
   padding: 30px;
 }
 
-td {
+.table .col_25 {
   padding: 10px;
 }
 
-tr:first-child > td {
+.table .col_25:nth-child(1),
+.table .col_25:nth-child(2),
+.table .col_25:nth-child(3),
+.table .col_25:nth-child(4) {
   border-bottom: 1px solid white;
 }
 
-td:nth-child(1n+2) {
+.table .col_25:nth-child(2),
+.table .col_25:nth-child(3),
+.table .col_25:nth-child(4),
+.table .col_25:nth-child(6),
+.table .col_25:nth-child(7),
+.table .col_25:nth-child(8) {
   border-left: 1px solid white;
 }
 
-table img, table i {
+.table img {
   width: 120px;
   height: 45px;
 }
@@ -299,9 +307,17 @@ table img, table i {
   top: 50px;
 }
 
+.col_25 img {
+  width: 100%;
+}
+
 .start .col_25 {
   max-width: 200px;
   padding: 20px;
+}
+
+.start .container {
+  padding: 20px 0;
 }
 
 img.girl {
